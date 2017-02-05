@@ -24,6 +24,8 @@ Rectangle {
 		width: screen.width
 		height: screen.partition * 2
 		y: drawer.height
+		color: "#3F3F3F"
+		fontColor: "#DCDCCC"
 
 	}
 
@@ -34,6 +36,15 @@ Rectangle {
 		border.width: 1
 		border.color: "#6A6D6A"
 		z: 1
+
+		gradient: Gradient {
+
+			GradientStop { position: 0.0; color: "#8C8F8C" }
+			GradientStop { position: 0.17; color: "#6A6D6A" }
+			GradientStop { position: 0.77; color: "#3F3F3F" }
+			GradientStop { position: 1.0; color: "#6A6D6A" }
+
+		}
 
 		Image {
 
